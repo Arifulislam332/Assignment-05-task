@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<style>
+    h1{
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+        padding: 8px;
+    }
+    h3{
+        color: rgb(3, 177, 241);
+        font-size: bold;
+    }
+    span{
+        color: rgb(223, 59, 59);
+        border: 1px solid gray;
+        border-radius: 4px;
+        background-color: rgb(236, 219, 163);
+        padding: 5px;
+    }
+    div{
+        margin: 10px;
+        padding: 10px;
+    }
+    fieldset{
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    label{
+        display: block;
+        padding: 5px;
+    }
+    .input input[type]{
+        margin-right: 20px ;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(9, 145, 235);
+        font-size: bold;
+        width: 70px;
+    }
+    .input input[type]:hover{
+        background-color: rgb(216, 130, 115);
+        color: rgb(16, 0, 240);
+    }
+</style>
+<body>
+    <h1>
+        Welcome to our <span>'FOOD-SHOPE'</span>
+    </h1>
+    <div class="div">
+        <h3>What products are you interested in buying?</h3>
+        <form>
+            <input type="text" placeholder="Enter your name!">
+            <input type="email" placeholder="Email">
+            <fieldset>
+                <legend><b> Please choose items</b></legend>
+                <label for="pizza">
+                    <input type="radio" name="food1" id="pizza">Pizza
+                </label>
+                <label for="chips">
+                    <input type="radio" name="food2" id="chips">Chips
+                </label>
+                <label for="pasta">
+                    <input type="radio" name="food3" id="pasta">Pasta
+                </label>      
+            </fieldset>
+            <fieldset>
+                <legend><b>Select your other items</b></legend>
+                <label for="rise">
+                    <input type="checkbox" name="" id="rise">Rise
+                </label>
+                <label for="flower">
+                    <input type="checkbox" name="" id="flower">Con-flower
+                </label>
+                <label for="sugger">
+                    <input type="checkbox" name="" id="sugger">Sugger
+                </label>
+            </fieldset>
+            <div class="input">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
